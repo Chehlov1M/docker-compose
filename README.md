@@ -3,7 +3,7 @@
 ## Задача 1. Установка Docker, сборка и публикация образа Nginx
  Доступ к Docker Hub отсутствует, образ собран локально
 
-![Inspect task5-nginx](docker_version.png)
+![nginx](docker_version.png)
 
 
 ## Задача 2. Запуск, переименование, проверка контейнера
@@ -11,10 +11,8 @@
 ### Выполненные действия
 
 1. Запуск контейнера с пробросом порта только на localhost:
-   ```bash
-   docker run -d --name Chehlov-custom-nginx-t2 -p 127.0.0.1:8080:80 custom-nginx:1.0.0
-```
-```
+  ![nginx](custom_nginx.png)
+
 ## Задача 3. Часть 1: остановка контейнера через Ctrl+C
 
 ### Выполненные действия
