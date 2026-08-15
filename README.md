@@ -96,6 +96,13 @@ docker compose down
 2. При запуске `docker compose up -d` без compose-файла Docker обнаружил «осиротевшие» контейнеры и выдал предупреждение с рекомендацией использовать флаг `--remove-orphans`.
 3. Для очистки был выполнен:  
    ```bash
+
    docker compose up -d --remove-orphans
+После удаления docker-compose.yaml попытка запуска через docker compose up -d привела к ошибке no configuration file provided: not found.
+Контейнеры проекта (task5-*) остались в системе как orphan-контейнеры. Поскольку compose‑файл отсутствовал, флаг --remove-orphans не мог быть применён.
+Для очистки проекта была использована команда прямого удаления контейнеров:
+bash
+
+docker rm -f $(docker ps -aq --filter name=task5)
 
 ![Inspect task5-nginx](screenshots/inspect_task5.png)
