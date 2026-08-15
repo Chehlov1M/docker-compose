@@ -87,5 +87,15 @@ rm compose.yaml
 docker compose up -d
 # Вывод: warning о том, что compose.yaml не найден
 
+
 # Остановка проекта одной командой
 docker compose down
+### Удаление манифеста и очистка orphan-контейнеров
+
+1. Файл `docker-compose.yaml` был удалён из директории проекта.
+2. При запуске `docker compose up -d` без compose-файла Docker обнаружил «осиротевшие» контейнеры и выдал предупреждение с рекомендацией использовать флаг `--remove-orphans`.
+3. Для очистки был выполнен:  
+   ```bash
+   docker compose up -d --remove-orphans
+
+![Inspect task5-nginx](screenshots/inspect_task5.png)
