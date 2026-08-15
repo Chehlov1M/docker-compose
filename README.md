@@ -70,9 +70,9 @@
 
 ![nginx](centos_vol.png)
 
-# Контейнер 1: CentOS
+Контейнер 1: CentOS
 
-# Контейнер 2: Debian
+Контейнер 2: Debian
 
 ### Вывод
 
