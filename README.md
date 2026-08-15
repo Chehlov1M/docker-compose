@@ -86,13 +86,13 @@ Docker-тома позволяют организовать общее хран�
 ### Цель
 Научиться управлять несколькими compose‑файлами, использовать локальный Docker Registry, деплоить стеки через Portainer и анализировать конфигурацию контейнеров.
 
-![nginx]()
+![nginx](portainer_registry.png)
 
-![nginx]()
+![nginx](container_list.png)
 
-![nginx]()
+![nginx](inspect.png)
 
-![nginx]()
+![nginx](task5.png)
 
 ### Ключевые команды
 
