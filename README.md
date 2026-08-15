@@ -35,7 +35,11 @@
  
  ![nginx](curl.png)
 
-  ![nginx]()
+ ![nginx](recv.png)
+
+ Исправление маппинга 
+
+ ![nginx](docker_run.png)
 
  ### Действия и результаты
  
@@ -58,13 +62,7 @@
 
 ### Подготовка: создание общей директории на хосте
 
-```bash
-mkdir -p ~/docker-volumes/shared-data
-echo "Hello from Ubuntu host" > ~/docker-volumes/shared-data/host-file.txt
-```
 
-```
-```
 ## Задача 5: Portainer, локальный Registry и управление стеками
 
 ### Цель
